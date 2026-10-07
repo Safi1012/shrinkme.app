@@ -7,8 +7,8 @@
 
 # Shrink Me
 
-[![CI](https://github.com/Safi1012/shrink-me/actions/workflows/pipeline.yml/badge.svg?branch=main)](https://github.com/Safi1012/shrink-me/actions/workflows/pipeline.yml)
-[![Release](https://img.shields.io/github/v/release/Safi1012/shrink-me)](https://github.com/Safi1012/shrink-me/releases)
+[![CI](https://github.com/Safi1012/shrinkme.app/actions/workflows/pipeline.yml/badge.svg?branch=main)](https://github.com/Safi1012/shrinkme.app/actions/workflows/pipeline.yml)
+[![Release](https://img.shields.io/github/v/release/Safi1012/shrinkme.app)](https://github.com/Safi1012/shrinkme.app/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-fe5196.svg)](https://www.conventionalcommits.org)
 
@@ -64,8 +64,8 @@ The only server-side part is the live counter. It is a [Cloudflare Worker](https
 ### Setup
 
 ```sh
-git clone https://github.com/Safi1012/shrink-me.git
-cd shrink-me
+git clone https://github.com/Safi1012/shrinkme.app.git
+cd shrinkme.app
 corepack enable
 pnpm install
 cp .env.example .env.local   # placeholder details for the legal pages
@@ -139,7 +139,7 @@ On every push to `main`, release-please keeps a release pull request open that b
 
 ## Contributing
 
-Contributions are welcome, from bug reports and translations to new features. For anything bigger than a small fix, please [open an issue](https://github.com/Safi1012/shrink-me/issues) first.
+Contributions are welcome, from bug reports and translations to new features. For anything bigger than a small fix, please [open an issue](https://github.com/Safi1012/shrinkme.app/issues) first.
 
 Open pull requests against `main`, use [Conventional Commits](https://www.conventionalcommits.org), and make sure the checks pass:
 
@@ -151,7 +151,7 @@ Using an AI coding agent? Point it at [`AGENTS.md`](AGENTS.md).
 
 ## Security
 
-Please don't report security vulnerabilities in public issues. Report them privately through [GitHub's private vulnerability reporting](https://github.com/Safi1012/shrink-me/security/advisories/new) instead.
+Please don't report security vulnerabilities in public issues. Report them privately through [GitHub's private vulnerability reporting](https://github.com/Safi1012/shrinkme.app/security/advisories/new) instead.
 
 ## License
 

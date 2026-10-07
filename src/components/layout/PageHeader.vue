@@ -10,7 +10,7 @@ import { RouterLink } from 'vue-router'
         <strong class="pt-1">Shrink<span class="text-shrink-me-primary">Me</span></strong>
       </RouterLink>
       <a
-        href="https://github.com/Safi1012/shrink-me"
+        href="https://github.com/Safi1012/shrinkme.app"
         target="_blank"
         rel="noopener"
         :aria-label="$t('navigation.github')"

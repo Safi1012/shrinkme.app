@@ -201,7 +201,7 @@ const packages: Credit[] = [
             >
           </template>
           <template #repository>
-            <a href="https://github.com/Safi1012/shrink-me" target="_blank" rel="noopener">{{
+            <a href="https://github.com/Safi1012/shrinkme.app" target="_blank" rel="noopener">{{
               t('credits.ghostscript_repository')
             }}</a>
           </template>
