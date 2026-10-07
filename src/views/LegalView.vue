@@ -58,7 +58,7 @@ const language = useLegalLanguage()
           Die Texte und Grafiken dieser Website unterliegen dem deutschen Urheberrecht. Der
           Quellcode von Shrink Me ist unter der
           <a
-            href="https://github.com/Safi1012/shrink-me/blob/main/LICENSE"
+            href="https://github.com/Safi1012/shrinkme.app/blob/main/LICENSE"
             target="_blank"
             rel="noopener"
             >MIT-Lizenz</a
@@ -115,7 +115,7 @@ const language = useLegalLanguage()
           The texts and graphics on this website are subject to German copyright law. The source
           code of Shrink Me is published under the
           <a
-            href="https://github.com/Safi1012/shrink-me/blob/main/LICENSE"
+            href="https://github.com/Safi1012/shrinkme.app/blob/main/LICENSE"
             target="_blank"
             rel="noopener"
             >MIT License</a

@@ -6,7 +6,7 @@ describe('parseChangelog', () => {
   it('reads the releases, sections and entries release-please writes', () => {
     const markdown = `# Changelog
 
-## [1.1.0](https://github.com/Safi1012/shrink-me/compare/v1.0.0...v1.1.0) (2026-10-05)
+## [1.1.0](https://github.com/Safi1012/shrinkme.app/compare/v1.0.0...v1.1.0) (2026-10-05)
 
 
 ### ⚠ BREAKING CHANGES
@@ -15,13 +15,13 @@ describe('parseChangelog', () => {
 
 ### Features
 
-* **pdf:** let the quality be chosen ([#12](https://github.com/Safi1012/shrink-me/issues/12)) ([1a2b3c4](https://github.com/Safi1012/shrink-me/commit/1a2b3c4d5e6f))
-* show a changelog ([5d6e7f8](https://github.com/Safi1012/shrink-me/commit/5d6e7f8))
+* **pdf:** let the quality be chosen ([#12](https://github.com/Safi1012/shrinkme.app/issues/12)) ([1a2b3c4](https://github.com/Safi1012/shrinkme.app/commit/1a2b3c4d5e6f))
+* show a changelog ([5d6e7f8](https://github.com/Safi1012/shrinkme.app/commit/5d6e7f8))
 
 
 ### Bug Fixes
 
-* keep \`.svg\` files as they are ([9a8b7c6](https://github.com/Safi1012/shrink-me/commit/9a8b7c6))
+* keep \`.svg\` files as they are ([9a8b7c6](https://github.com/Safi1012/shrinkme.app/commit/9a8b7c6))
 
 ## 1.0.0 (2026-10-01)
 

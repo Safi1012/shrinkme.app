@@ -31,7 +31,9 @@ const route = useRoute()
           <span>|</span>
         </li>
         <li>
-          <a href="https://github.com/Safi1012/shrink-me" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/Safi1012/shrinkme.app" target="_blank" rel="noopener"
+            >GitHub</a
+          >
         </li>
         <li>
           <span>|</span>
