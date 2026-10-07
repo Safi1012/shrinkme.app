@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/Safi1012/shrinkme.app/compare/shrink-me-v1.3.0...shrink-me-v1.3.1) (2026-10-07)
+
+
+### Bug Fixes
+
+* point GitHub links to the renamed repository ([#8](https://github.com/Safi1012/shrinkme.app/issues/8)) ([b289cce](https://github.com/Safi1012/shrinkme.app/commit/b289ccebfcfef73a9405b5401f9b5f25d9eb89a1))
+
 ## [1.3.0](https://github.com/Safi1012/shrink-me/compare/shrink-me-v1.2.1...shrink-me-v1.3.0) (2026-10-01)
 
 
