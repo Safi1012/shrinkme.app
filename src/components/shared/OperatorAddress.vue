@@ -30,7 +30,7 @@ defineProps<{ emailLabel: string }>()
 }
 
 .operator strong {
-  color: var(--color-shrink-me-secondary);
+  color: var(--color-emphasis);
 }
 
 .email {

@@ -162,7 +162,7 @@ onMounted(() => {
 <template>
   <div class="outer flex flex-col items-end">
     <div class="container flex flex-col content-center justify-center">
-      <h1 class="mb-5 text-center text-2xl font-light text-black md:mt-0 md:mb-10 md:text-5xl">
+      <h1 class="mb-5 text-center text-2xl font-light text-ink md:mt-0 md:mb-10 md:text-5xl">
         {{ resultTitle }}
       </h1>
 
@@ -182,7 +182,7 @@ onMounted(() => {
       <a
         v-if="totalSavedBytes === 0"
         id="myButton"
-        class="relative m-auto mt-[-2em] inline-block cursor-pointer rounded-[3px] border-0 bg-shrink-me-primary px-[0.75em] py-[0.6em] text-base tracking-wider text-white shadow-[0_6px_30px_0_#adadadfa] transition-shadow duration-300 ease-[ease-in-out] hover:cursor-pointer hover:shadow-[0_2px_10px_0_#adadadfa]"
+        class="relative m-auto mt-[-2em] inline-block cursor-pointer rounded-[3px] border-0 bg-shrink-me-primary px-[0.75em] py-[0.6em] text-base tracking-wider text-white shadow-[0_6px_30px_0_var(--color-button-shadow)] transition-shadow duration-300 ease-[ease-in-out] hover:cursor-pointer hover:shadow-[0_2px_10px_0_var(--color-button-shadow)]"
         @click="resetFileManagerComponentData"
         >{{ $t('home.result.select_new') }}</a
       >
@@ -190,7 +190,7 @@ onMounted(() => {
         v-else-if="isDownloadAttributeSupported()"
         id="myButton"
         ref="download"
-        class="relative m-auto mt-[-2em] inline-block cursor-pointer rounded-[3px] border-0 bg-shrink-me-primary px-[0.75em] py-[0.6em] text-base tracking-wider text-white uppercase shadow-[0_6px_30px_0_#adadadfa] transition-shadow duration-300 ease-[ease-in-out] hover:cursor-pointer hover:shadow-[0_2px_10px_0_#adadadfa]"
+        class="relative m-auto mt-[-2em] inline-block cursor-pointer rounded-[3px] border-0 bg-shrink-me-primary px-[0.75em] py-[0.6em] text-base tracking-wider text-white uppercase shadow-[0_6px_30px_0_var(--color-button-shadow)] transition-shadow duration-300 ease-[ease-in-out] hover:cursor-pointer hover:shadow-[0_2px_10px_0_var(--color-button-shadow)]"
         href="#"
         @click="handleDownloadClick"
       >
@@ -203,7 +203,7 @@ onMounted(() => {
 
       <button
         v-if="getMobileOperatingSystem() === 'Android'"
-        class="retry share relative z-2 m-auto ms-[-1.25em] me-auto mt-[-2.7em] flex h-[2.7em] w-[2.7em] cursor-pointer items-center justify-center rounded-[3px] border-0 bg-shrink-me-primary p-0 px-[0.75em] py-[0.6em] text-base tracking-wider text-white shadow-[0_6px_30px_0_#c7c7c7fa] transition-shadow duration-300 ease-[ease-in-out] hover:cursor-pointer hover:shadow-[0_2px_10px_0_#adadadfa]"
+        class="retry share relative z-2 m-auto ms-[-1.25em] me-auto mt-[-2.7em] flex h-[2.7em] w-[2.7em] cursor-pointer items-center justify-center rounded-[3px] border-0 bg-shrink-me-primary p-0 px-[0.75em] py-[0.6em] text-base tracking-wider text-white shadow-[0_6px_30px_0_var(--color-button-shadow-soft)] transition-shadow duration-300 ease-[ease-in-out] hover:cursor-pointer hover:shadow-[0_2px_10px_0_var(--color-button-shadow)]"
         :aria-label="$t('home.result.share')"
         :title="$t('home.result.share')"
         @click="shareFiles"
@@ -219,7 +219,7 @@ onMounted(() => {
 
     <button
       v-if="userPressedSave"
-      class="retry z-2 m-auto me-[-1.25em] mt-[-2.7em] flex h-[2.7em] w-[2.7em] cursor-pointer items-center justify-center rounded-[50%] border-0 bg-shrink-me-primary p-0 px-[0.75em] py-[0.6em] text-base tracking-wider text-white shadow-[0_6px_30px_0_#c7c7c7fa] transition-shadow duration-300 ease-[ease-in-out] hover:cursor-pointer hover:shadow-[0_2px_10px_0_#adadadfa]"
+      class="retry z-2 m-auto me-[-1.25em] mt-[-2.7em] flex h-[2.7em] w-[2.7em] cursor-pointer items-center justify-center rounded-[50%] border-0 bg-shrink-me-primary p-0 px-[0.75em] py-[0.6em] text-base tracking-wider text-white shadow-[0_6px_30px_0_var(--color-button-shadow-soft)] transition-shadow duration-300 ease-[ease-in-out] hover:cursor-pointer hover:shadow-[0_2px_10px_0_var(--color-button-shadow)]"
       :aria-label="$t('home.result.start_over')"
       :title="$t('home.result.start_over')"
       @click="resetFileManagerComponentData"

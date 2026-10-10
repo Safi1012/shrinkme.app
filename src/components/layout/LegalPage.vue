@@ -98,8 +98,17 @@ watch(
   --mist: #eef7f8;
   --line: #d9e8ea;
   padding-top: 72px;
-  background: var(--color-white);
+  background: var(--color-surface);
   color: var(--ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  .legal-page {
+    --ink: #d3dcdd;
+    --muted: #93a4a7;
+    --mist: #16272a;
+    --line: #26393c;
+  }
 }
 
 .band {
@@ -130,7 +139,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 2.5rem;
-  fill: var(--color-white);
+  fill: var(--color-surface);
 }
 
 .body {
@@ -172,7 +181,7 @@ h1 {
   margin-bottom: 0.75rem;
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--color-shrink-me-secondary);
+  color: var(--color-emphasis);
 }
 
 .toc ol {
@@ -204,12 +213,12 @@ h1 {
 }
 
 .toc a:hover {
-  color: var(--color-shrink-me-secondary);
+  color: var(--color-emphasis);
 }
 
 .toc a.active {
   border-left-color: var(--color-shrink-me-primary);
-  color: var(--color-shrink-me-secondary);
+  color: var(--color-emphasis);
   font-weight: 600;
 }
 
@@ -252,7 +261,7 @@ a:focus-visible {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.3;
-  color: var(--color-shrink-me-secondary);
+  color: var(--color-emphasis);
 }
 
 .legal-content h2 .number {
@@ -265,7 +274,7 @@ a:focus-visible {
   margin: 2rem 0 0.5rem;
   font-size: 1.125rem;
   font-weight: 600;
-  color: var(--color-shrink-me-secondary);
+  color: var(--color-emphasis);
 }
 
 .legal-content p {
@@ -298,7 +307,7 @@ a:focus-visible {
 .legal-content a {
   font-size: inherit;
   font-weight: 400;
-  color: var(--color-shrink-me-secondary);
+  color: var(--color-emphasis);
   text-decoration: underline;
   text-decoration-color: var(--color-shrink-me-primary);
   text-decoration-thickness: 1px;
@@ -322,7 +331,7 @@ a:focus-visible {
   padding: 1.25rem 1.5rem;
   border-left: 3px solid var(--color-shrink-me-primary);
   border-radius: 0 6px 6px 0;
-  background: #eef7f8;
+  background: var(--mist);
 }
 
 .legal-content .callout h3 {
@@ -340,6 +349,6 @@ a:focus-visible {
 
 .legal-content .note {
   font-size: 0.9375rem;
-  color: #6f8184;
+  color: var(--muted);
 }
 </style>

@@ -9,7 +9,7 @@ const route = useRoute()
 <template>
   <footer>
     <nav
-      class="grid auto-rows-[minmax(3em,auto)] grid-cols-12 justify-items-stretch gap-[2em_0.75em] bg-white"
+      class="grid auto-rows-[minmax(3em,auto)] grid-cols-12 justify-items-stretch gap-[2em_0.75em] bg-surface"
     >
       <ul class="flex list-none flex-row justify-between pl-0">
         <li>
@@ -45,14 +45,14 @@ const route = useRoute()
 
       <div class="information mx-0 mt-2 mb-6 flex items-end justify-between text-base">
         <div>
-          <h1 class="mb-1 text-sm text-[#9b9b9b]">
+          <h1 class="mb-1 text-sm text-muted">
             {{ $t('navigation.copyright', { year: new Date().getFullYear() }) }}
           </h1>
           <a
             href="https://filipesantoscorrea.com"
             target="_blank"
             rel="noopener"
-            class="hover:text-[#9b9b9b]"
+            class="hover:text-muted"
             >Filipe Santos Correa</a
           >
         </div>
@@ -60,7 +60,7 @@ const route = useRoute()
           <router-link
             v-if="route.name === 'contact'"
             to="/changelog"
-            class="m-0 text-end text-sm font-semibold text-[#9b9b9b] hover:text-shrink-me-secondary"
+            class="m-0 text-end text-sm font-semibold text-muted hover:text-emphasis"
             >{{ $t('navigation.version', { version }) }}</router-link
           >
           <LanguageSelect />

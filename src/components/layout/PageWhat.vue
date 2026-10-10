@@ -7,7 +7,7 @@ const { t } = useI18n()
 <template>
   <section
     id="what"
-    class="grid auto-rows-[minmax(6em,auto)] grid-cols-12 justify-items-center gap-[2em_1.75em] bg-white"
+    class="grid auto-rows-[minmax(6em,auto)] grid-cols-12 justify-items-center gap-[2em_1.75em] bg-surface"
   >
     <div class="desc text-center">
       <h1 class="mb-6">{{ $t('home.what.headline') }}</h1>
@@ -17,7 +17,7 @@ const { t } = useI18n()
     </div>
 
     <div
-      class="card card-1 flex w-[11.25em] flex-col items-center justify-start rounded-[5px] bg-white px-[1em] py-[2em] text-center shadow-[0_4px_40px_0_#e8e8e89e]"
+      class="card card-1 flex w-[11.25em] flex-col items-center justify-start rounded-[5px] bg-surface-raised px-[1em] py-[2em] text-center shadow-[0_4px_40px_0_var(--color-card-shadow)]"
     >
       <img
         :alt="t('home.what.no_ads_image_alt')"
@@ -29,7 +29,7 @@ const { t } = useI18n()
     </div>
 
     <div
-      class="card card-2 flex w-[11.25em] flex-col items-center justify-start rounded-[5px] bg-white px-[1em] py-[2em] text-center shadow-[0_4px_40px_0_#e8e8e89e]"
+      class="card card-2 flex w-[11.25em] flex-col items-center justify-start rounded-[5px] bg-surface-raised px-[1em] py-[2em] text-center shadow-[0_4px_40px_0_var(--color-card-shadow)]"
     >
       <img :alt="t('home.what.free_image_alt')" src="@/assets/icons/free.svg" class="h-7 w-7" />
       <h2 class="mt-6 mb-3">{{ $t('home.what.free_headline') }}</h2>
@@ -37,7 +37,7 @@ const { t } = useI18n()
     </div>
 
     <div
-      class="card card-3 flex w-[11.25em] flex-col items-center justify-start rounded-[5px] bg-white px-[1em] py-[2em] text-center shadow-[0_4px_40px_0_#e8e8e89e]"
+      class="card card-3 flex w-[11.25em] flex-col items-center justify-start rounded-[5px] bg-surface-raised px-[1em] py-[2em] text-center shadow-[0_4px_40px_0_var(--color-card-shadow)]"
     >
       <img
         :alt="t('home.what.fast_image_alt')"
@@ -49,7 +49,7 @@ const { t } = useI18n()
     </div>
 
     <div
-      class="card card-4 flex w-[11.25em] flex-col items-center justify-start rounded-[5px] bg-white px-[1em] py-[2em] text-center shadow-[0_4px_40px_0_#e8e8e89e]"
+      class="card card-4 flex w-[11.25em] flex-col items-center justify-start rounded-[5px] bg-surface-raised px-[1em] py-[2em] text-center shadow-[0_4px_40px_0_var(--color-card-shadow)]"
     >
       <img :alt="t('home.what.offline_image_alt')" src="@/assets/icons/wifi.svg" class="h-7 w-7" />
       <h2 class="mt-6 mb-3">{{ $t('home.what.offline_headline') }}</h2>

@@ -4,7 +4,9 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <header>
-    <nav class="text-l fixed z-10 flex w-full items-center justify-between bg-white py-3 pr-5 pl-4">
+    <nav
+      class="text-l fixed z-10 flex w-full items-center justify-between bg-surface py-3 pr-5 pl-4"
+    >
       <RouterLink to="/" class="text-l flex items-center">
         <img alt="" src="@/assets/icons/logo.svg" class="h-12" />
         <strong class="pt-1">Shrink<span class="text-shrink-me-primary">Me</span></strong>
@@ -15,7 +17,7 @@ import { RouterLink } from 'vue-router'
         rel="noopener"
         :aria-label="$t('navigation.github')"
         :title="$t('navigation.github')"
-        class="mt-[5px] hidden items-center gap-2 text-sm font-semibold text-shrink-me-secondary transition-colors hover:text-shrink-me-primary lg:flex"
+        class="mt-[5px] hidden items-center gap-2 text-sm font-semibold text-emphasis transition-colors hover:text-shrink-me-primary lg:flex"
       >
         <svg viewBox="0 0 16 16" class="h-6 w-6" fill="currentColor" aria-hidden="true">
           <path

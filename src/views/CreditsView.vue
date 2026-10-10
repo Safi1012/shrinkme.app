@@ -292,13 +292,13 @@ const packages: Credit[] = [
 .credit-list {
   list-style: none;
   padding: 0;
-  border-top: 1px solid #d9e8ea;
+  border-top: 1px solid var(--line);
 }
 
 .credit-list li {
   margin: 0;
   padding: 0.9rem 0;
-  border-bottom: 1px solid #d9e8ea;
+  border-bottom: 1px solid var(--line);
 }
 
 .credit-head {
@@ -321,18 +321,18 @@ const packages: Credit[] = [
 .license {
   font-size: 0.875rem;
   font-weight: 300;
-  color: #6f8184;
+  color: var(--muted);
 }
 
 a.license {
-  color: #6f8184;
-  text-decoration-color: #d9e8ea;
+  color: var(--muted);
+  text-decoration-color: var(--line);
 }
 
 .copyright {
   margin: 0.15rem 0 0;
   font-size: 0.9375rem;
-  color: #6f8184;
+  color: var(--muted);
 }
 
 .callout + .credit-list {
@@ -340,17 +340,17 @@ a.license {
 }
 
 details {
-  border-bottom: 1px solid #d9e8ea;
+  border-bottom: 1px solid var(--line);
 }
 
 details:first-of-type {
-  border-top: 1px solid #d9e8ea;
+  border-top: 1px solid var(--line);
 }
 
 summary {
   padding: 0.9rem 0;
   font-weight: 600;
-  color: var(--color-shrink-me-secondary);
+  color: var(--color-emphasis);
   cursor: pointer;
 }
 

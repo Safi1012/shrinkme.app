@@ -60,7 +60,7 @@ const navigateToNextStage = () => {
 
 <template>
   <div class="text-center">
-    <h1 class="mb-5 text-center text-2xl font-light text-black md:mt-0 md:mb-10 md:text-5xl">
+    <h1 class="mb-5 text-center text-2xl font-light text-ink md:mt-0 md:mb-10 md:text-5xl">
       {{ $t('home.hero.headline') }}
     </h1>
 
@@ -107,7 +107,7 @@ const navigateToNextStage = () => {
     </FileArea>
 
     <form
-      class="form-select relative m-auto mt-[-2em] inline-block h-[2.5em] rounded-[3px] bg-shrink-me-primary text-base text-white shadow-[0_6px_30px_0_#adadadfa] transition-shadow duration-300 ease-[ease-in-out] hover:shadow-[0_2px_10px_0_#adadadfa]"
+      class="form-select relative m-auto mt-[-2em] inline-block h-[2.5em] rounded-[3px] bg-shrink-me-primary text-base text-white shadow-[0_6px_30px_0_var(--color-button-shadow)] transition-shadow duration-300 ease-[ease-in-out] hover:shadow-[0_2px_10px_0_var(--color-button-shadow)]"
     >
       <input
         id="fileButton"

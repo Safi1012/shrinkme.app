@@ -3,8 +3,17 @@
 @theme {
   --color-*: initial;
   --color-transparent: transparent;
-  --color-black: #4a4a4a;
   --color-white: #ffffff;
+
+  /* Semantic colors, switched to their dark variants below */
+  --color-surface: #ffffff;
+  --color-surface-raised: #ffffff;
+  --color-ink: #4a4a4a;
+  --color-muted: #9b9b9b;
+  --color-emphasis: #034e56;
+  --color-card-shadow: #e8e8e89e;
+  --color-button-shadow: #adadadfa;
+  --color-button-shadow-soft: #c7c7c7fa;
 
   --color-shrink-me-primary: #48bfcd;
   --color-shrink-me-secondary: #034e56;
@@ -16,6 +25,34 @@
     'Segoe UI Symbol', 'Noto Color Emoji';
 
   --grid-template-columns-12: repeat(12, 1fr);
+}
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+    /* Body text, kept as the browser's black in light mode */
+    --text: #000000;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #d3dcdd;
+      --color-surface: #0e1a1c;
+      --color-surface-raised: #16272a;
+      --color-ink: #d3dcdd;
+      --color-muted: #94a3a5;
+      /* The secondary brand color is too dark to read as text on a dark background */
+      --color-emphasis: #7fd3dc;
+      --color-card-shadow: #00000066;
+      --color-button-shadow: #000000b3;
+      --color-button-shadow-soft: #000000b3;
+    }
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--text);
+  }
 }
 
 /*

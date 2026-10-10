@@ -5,7 +5,7 @@
       :plural="compressedImages"
       tag="p"
       scope="global"
-      class="inline-flex flex-row items-end justify-center text-[#9b9b9b]"
+      class="inline-flex flex-row items-end justify-center text-muted"
     >
       <template #count>
         <RollingNumber
@@ -21,7 +21,7 @@
       keypath="home.counter.saved"
       tag="p"
       scope="global"
-      class="ms-[0.3em] inline-flex flex-row items-end justify-center text-[#9b9b9b]"
+      class="ms-[0.3em] inline-flex flex-row items-end justify-center text-muted"
     >
       <template #amount>
         <RollingNumber
