@@ -11,23 +11,26 @@ const route = useRoute()
     <nav
       class="grid auto-rows-[minmax(3em,auto)] grid-cols-12 justify-items-stretch gap-[2em_0.75em] bg-white"
     >
-      <ul class="flex list-none flex-row justify-between pl-0">
+      <!-- Translated links don't fit in one line on small phones, so they wrap there -->
+      <ul
+        class="flex list-none flex-row flex-wrap justify-center gap-x-4 gap-y-2 ps-0 sm:justify-between sm:gap-x-0"
+      >
         <li>
           <router-link to="/privacy">{{ $t('navigation.privacy') }}</router-link>
         </li>
-        <li>
+        <li class="hidden sm:block" aria-hidden="true">
           <span class="s1">|</span>
         </li>
         <li>
           <router-link to="/legal">{{ $t('navigation.legal') }}</router-link>
         </li>
-        <li>
+        <li class="hidden sm:block" aria-hidden="true">
           <span>|</span>
         </li>
         <li>
           <router-link to="/credits">{{ $t('navigation.credits') }}</router-link>
         </li>
-        <li>
+        <li class="hidden sm:block" aria-hidden="true">
           <span>|</span>
         </li>
         <li>
@@ -35,7 +38,7 @@ const route = useRoute()
             >GitHub</a
           >
         </li>
-        <li>
+        <li class="hidden sm:block" aria-hidden="true">
           <span>|</span>
         </li>
         <li>

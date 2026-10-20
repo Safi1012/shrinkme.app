@@ -52,3 +52,20 @@ test.describe('in a browser language without a translation', () => {
     await expect(page.getByRole('combobox', { name: 'Sprache' })).toHaveValue('de')
   })
 })
+
+test.describe('on a small phone', () => {
+  test.use({ viewport: { width: 320, height: 640 } })
+
+  // Translations make the footer links much longer than in English
+  for (const code of ['en', 'de', 'es', 'fr', 'pt-BR', 'ar', 'hi', 'bn', 'zh-Hans']) {
+    test(`fits the footer links on the screen in ${code}`, async ({ page }) => {
+      await page.addInitScript((locale) => localStorage.setItem('locale', locale), code)
+      await page.goto('/contact')
+
+      const contact = page.locator('footer').getByRole('link').nth(4)
+      await contact.scrollIntoViewIfNeeded()
+      await expect(contact).toBeInViewport({ ratio: 1 })
+      expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(320)
+    })
+  }
+})
