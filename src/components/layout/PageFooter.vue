@@ -7,7 +7,8 @@ const route = useRoute()
 </script>
 
 <template>
-  <footer>
+  <!-- Not a <footer>: uBlock Origin hides every footer on shrinkme.* (meant for a URL shortener) -->
+  <div role="contentinfo">
     <nav
       class="grid auto-rows-[minmax(3em,auto)] grid-cols-12 justify-items-stretch gap-[2em_0.75em] bg-white"
     >
@@ -70,7 +71,7 @@ const route = useRoute()
         </div>
       </div>
     </nav>
-  </footer>
+  </div>
 </template>
 
 <style scoped>

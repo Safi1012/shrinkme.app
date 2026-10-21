@@ -210,3 +210,13 @@ test('says a corrupt image on its own was already optimized', async ({ page }) =
   await expectAlreadyOptimized(page)
   await expect.poll(() => counter.increments).toEqual([{ compressedImages: 1, savedBytes: 0 }])
 })
+
+test('keeps the footer visible with uBlock Origin', async ({ page }) => {
+  // The rule uBlock Origin applies to shrinkme.*, meant for an unrelated URL shortener
+  await page.addStyleTag({
+    content:
+      '.expop, .blog-item, footer, [src*="shrinkme."], .box-main h3, [hight="250px"] { display: none !important }'
+  })
+
+  await expect(page.getByRole('contentinfo').getByRole('link', { name: 'Privacy' })).toBeVisible()
+})
