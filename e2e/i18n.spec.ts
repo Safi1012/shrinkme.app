@@ -62,7 +62,7 @@ test.describe('on a small phone', () => {
       await page.addInitScript((locale) => localStorage.setItem('locale', locale), code)
       await page.goto('/contact')
 
-      const contact = page.locator('footer').getByRole('link').nth(4)
+      const contact = page.getByRole('contentinfo').getByRole('link').nth(4)
       await contact.scrollIntoViewIfNeeded()
       await expect(contact).toBeInViewport({ ratio: 1 })
       expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(320)
