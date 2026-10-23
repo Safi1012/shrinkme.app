@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.3.1](https://github.com/Safi1012/shrinkme.app/compare/shrink-me-v1.3.0...shrink-me-v1.3.1) (2026-10-21)
+
+
+### Bug Fixes
+
+* keep the footer links on screen on small phones ([#10](https://github.com/Safi1012/shrinkme.app/issues/10)) ([bd7af8a](https://github.com/Safi1012/shrinkme.app/commit/bd7af8a57ce595f4887c9248ab2ae51948b63f4b))
+* keep the footer visible with uBlock Origin ([#11](https://github.com/Safi1012/shrinkme.app/issues/11)) ([b9d9b0b](https://github.com/Safi1012/shrinkme.app/commit/b9d9b0b9c083876ade7250e2da5207e584b367f7))
+* point GitHub links to the renamed repository ([#8](https://github.com/Safi1012/shrinkme.app/issues/8)) ([b289cce](https://github.com/Safi1012/shrinkme.app/commit/b289ccebfcfef73a9405b5401f9b5f25d9eb89a1))
+
 ## [1.3.0](https://github.com/Safi1012/shrink-me/compare/shrink-me-v1.2.1...shrink-me-v1.3.0) (2026-10-01)
 
 
